@@ -1,0 +1,214 @@
+/*
+=======
+GLOBALS
+=======
+ */
+
+body {
+  margin: 0;
+  background-color: #FFC133;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+=======
+NAVBAR
+=======
+ */
+
+ .nav_container {
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   background-color: white;
+ }
+
+.nav_container nav a {
+  margin-left: 3rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .nav_container {
+      display: none;
+    }
+}
+
+/*
+=======
+BANNER CONTAINER
+=======
+ */
+
+.banner_container {
+  display: flex;
+  background-image: url("https://images.unsplash.com/photo-1551927336-09d50efd69cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  max-height: 30rem;
+  align-items: center;
+}
+
+.banner_container .banner_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 25%;
+  opacity: 75%;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 620px) {
+  .banner_container .banner_title {
+    font-size: 1rem;
+  }
+}
+
+/*
+
+=======
+JOIN CONTAINER
+=======
+ */
+
+ .join_container {
+   background-color: #FFC133;
+   height: 45rem;
+ }
+
+ .join_container .join_img_container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center;
+   height: 30rem;
+ }
+
+ @media only screen and (max-width: 600px) {
+   .join_container .join_img_container {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(3, 1fr);
+     background-size: contain;
+   }
+ }
+
+ .join_container .join_text {
+   display: grid;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .join_container .join_img_container .join_img_one, .join_img_two, .join_img_three {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: .2rem;
+ }
+
+.join_container .join_img_container .join_img_one {
+   background-image: url("https://images.unsplash.com/photo-1560073743-0a45c01b68c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1867&q=80");
+ }
+
+ .join_container .join_img_container .join_img_two {
+   background-image: url("https://images.unsplash.com/photo-1523395294292-1fbf0cd2435e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1959&q=80");
+ }
+
+ .join_container .join_img_container .join_img_three {
+   background-image: url("https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+ }
+
+ /* Media query to wrap images on screen size */
+
+
+ /*
+ =======
+ QUOTE CONTAINER
+ =======
+  */
+
+.quote_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-color: #F7B726;
+  text-align: center;
+  margin-bottom: 3.7rem;
+}
+
+.quote_container .quote_text {
+  /* display: grid; */
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .quote_container .quote_text h2{
+    font-size: 1rem;
+  }
+}
+
+/*
+=======
+SECOND IMG CONTAINER
+=======
+ */
+
+ .join_container .join_img_container .join_img_four, .join_img_five, .join_img_six {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: .2rem;
+ }
+
+ .join_container .join_img_container .join_img_four {
+    background-image: url("https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  }
+
+  .join_container .join_img_container .join_img_five {
+    background-image: url("https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2290&q=80");
+  }
+
+  .join_container .join_img_container .join_img_six {
+    background-image: url("https://images.unsplash.com/photo-1602263515015-dd72f8e9f301?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80");
+  }
+
+  /*
+  =======
+  CALL TO ACTION CONTAINER
+  =======
+   */
+
+.call_to_action_container {
+
+  background-color: #FFC133;
+  text-align: center;
+}
+
+/*
+=======
+FOOTER CONTAINER
+=======
+ */
+
+ footer {
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+ }
+
+footer a {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: inherit;
+  text-decoration: none;
+}
